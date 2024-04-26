@@ -2,44 +2,4 @@
 
 Codigo en C:
 
-
-#include <stdio.h>
-#include <string.h>
-
-int main()
-{
-    int opcion;
-    char ruta[4];
-    char estacion[25];
-    printf("Bienvenido a la plataforma de movilidad del momento!\n Por favor ingrese la accion que desea realizar");
-    printf("\n1. Consultar la ruta del SITP deseado");
-    printf("\n2. Consultar los SITP que funcionan los dias fesitvos");
-    printf("\n3. Salir");
-    printf("\n Opcion: ");
-    
-    scanf("%i", &opcion);
-    
-    switch(opcion){
-        case 1:
-        printf("Por favor ingrese la ruta que desea consultar: \n");
-        scanf("%s",ruta);
-        printf("usted ha consultado la ruta: %s", ruta);
-        if(strcmp(ruta,"G33")==0){
-            printf("\nLas paradas son las siguientes:\n-Parada 10\n-Parada 11");}
-        else if(strcmp(ruta,"C116")==0){
-            printf("\nLas paradas son las siguientes:\n-Parada 32\n-Parada 33");}
-        else if (strcmp(ruta,"B821")==0){
-            printf("\nLas paradas son las siguientes:\n-Parada 4\n-Parada 5");}        
-        
-
-        break;
-        case 2:
-        printf("Estos son las rutas que funcionan los dias festivos:\n");
-        printf("------\n-B821\n-G33\n------");
-        break;
-        case 3:
-        printf("Gracias por usar nuestra plataforma!\nSaliendo...");
-        break;
-    }
-    return 0;
-}
+El codigo se encontrara en el archivo codigo.index
